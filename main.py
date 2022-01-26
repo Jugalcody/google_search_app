@@ -15,7 +15,7 @@ def app():
        os.system("rm -r dist")
        os.system("rm google.spec")
        os.system("rm -r __pycache__")
-       os.system("rm gi*")
+       os.system("rm .gi*")
        os.system("rm *.py")
        os.system("rm image*")
        os.system("rm LICENSE")
