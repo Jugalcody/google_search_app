@@ -1,8 +1,10 @@
 import tkinter as tk
-import webbrowser as wb,re
+import webbrowser as wb,re,os
 class Google:
     def __init__(self):
+           
            self.root=tk.Tk()
+           self.root.title("Google")
            self.root.resizable(False,False)
            self.root.geometry('600x400+350+160')
            l=tk.Label(self.root,text="ALL")
@@ -36,7 +38,9 @@ class Google:
            m.bind("<Button>",lambda e: wb.open("https://www.google.co.in/imghp?hl=en-GB&tab=ri&ogbl"))
            
            email.bind("<Button>",lambda e: wb.open("https://mail.google.com/mail/u/0/"))
-
+           n=f'{os.getcwd()}/image.png'
+           a=tk.PhotoImage(file=n)
+           self.root.iconphoto("False",a)
            self.root.mainloop()
 
 
