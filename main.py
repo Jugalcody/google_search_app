@@ -38,10 +38,11 @@ def app():
         print("kindly install python-pyinstaller")
         m=input("can i install it(y/n)? ")
         if m=='y':
-                  try:
+                   try:
+                        import os
                         os.system("pip install pyinstaller")
                         app()
-                  except:
+                   except:
                         print("operation stopped,an error occured")      
 
 
