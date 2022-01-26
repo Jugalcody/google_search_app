@@ -3,11 +3,15 @@ import os
 def app():
  s=input("Have you installed python-pyinstaller(y/n)? ")
  if s=='y':
-  try:
-   import os
-   os.system("pyinstaller -i images.ico -F google.py")
+   try:
+     import os
+     os.system("pyinstaller -i images.ico -F google.py")
+   except :
+        print("an error occured, try agaian!!")
+        os.system(f"pip install https://github.com/pyinstaller/pyinstaller/tarball/develop ")
+        app()
    a=os.getcwd()
-   b=a+'/dist/google.exe'
+   b=a+'/dist/google'
    c=a+'\dist\google.exe'
    o=input("you are using terminal or cmd(t/c)? ")
    if o=='t':
@@ -32,18 +36,15 @@ def app():
                os.system("del images.ico")
                os.system("del LICENSE")
                os.system("del README.md")
-  except :
-        print("an error occured, try agaian!!")
+  
  else:
-        print("kindly install python-pyinstaller")
-        m=input("can i install it(y/n)? ")
-        if m=='y':
-                   try:
-                        import os
-                        os.system("pip install pyinstaller")
-                        app()
-                   except:
-                        print("operation stopped,an error occured")      
+               import os                   
+               os.system(f"pip install https://github.com/pyinstaller/pyinstaller/tarball/develop ")
+               app()
+                        
+                                        
+                                
+                                
 
 
 if __name__=="__main__":
