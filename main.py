@@ -4,6 +4,7 @@ def app():
  s=input("Have you installed python-pyinstaller(y/n)? ")
  if s=='y':
   try:
+   import os
    os.system("pyinstaller -i images.ico -F google.py")
    a=os.getcwd()
    b=a+'/dist/google.exe'
