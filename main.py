@@ -8,8 +8,8 @@ def app():
    os.system("pyinstaller -i images.ico -F google.py")
    a=os.getcwd()
    b=a+'/dist/google.exe'
-   os=input("you are using terminal or cmd(t/c)? ")
-   if os=='t':
+   o=input("you are using terminal or cmd(t/c)? ")
+   if o=='t':
        os.system(f"cp {b} {a}")
        os.system("rm -r build")
        os.system("rm -r dist")
@@ -20,7 +20,7 @@ def app():
        os.system("rm image*")
        os.system("rm LICENSE")
        os.system("rm README.md")
-   elif os=='c':
+   elif o=='c':
                os.system(f"copy {b} {a}")
                os.system("rmdir /s build") 
                os.system("rmdir /s dist")
