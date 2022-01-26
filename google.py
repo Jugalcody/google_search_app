@@ -38,7 +38,7 @@ class Google:  #Google class will create a google search engine
            m.bind("<Button>",lambda e: wb.open("https://www.google.co.in/imghp?hl=en-GB&tab=ri&ogbl"))
            
            email.bind("<Button>",lambda e: wb.open("https://mail.google.com/mail/u/0/"))
-           n=f'{os.getcwd()}/image.png'
+           n=f'{os.getcwd()}/images.png'
            a=tk.PhotoImage(file=n)
            self.root.iconphoto("False",a)
            self.root.mainloop()
