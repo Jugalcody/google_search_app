@@ -29,7 +29,7 @@ def app():
                os.system("rmdir /s __pycache__")
                os.system("del *git*")
                os.system("del *.py")
-               os.system("del image*")
+               os.system("del images.ico")
                os.system("del LICENSE")
                os.system("del README.md")
   except :
