@@ -1,6 +1,6 @@
 import tkinter as tk
 import webbrowser as wb,re,os
-class Google:
+class Google:  #Google class will create a google search engine 
     def __init__(self):
            
            self.root=tk.Tk()
