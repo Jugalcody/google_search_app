@@ -26,6 +26,11 @@ def app():
        os.system("rm images.ico")
        os.system("rm LICENSE")
        os.system("rm README.md")
+       os.system("rm run2.py")
+       os.system("chmod +x google")
+       os.system("chmod +x run.py")
+       os.system("sudo cp google /bin")
+       os.system("sudo cp run.py /bin")
    elif o=='c':
                os.system(f"copy {c} {a}")
                os.system("rmdir /s build") 
@@ -33,12 +38,13 @@ def app():
                os.system("del google.spec")
                os.system("rmdir /s __pycache__")
                os.system("del *git*")
-               os.system("rm main.py")
-               os.system("rm google.py")
+               os.system("del main.py")
+               os.system("del google.py")
                os.system("del images.ico")
                os.system("del LICENSE")
                os.system("del README.md")
-  
+               os.system("del run.py")
+             
  else:
                import os                   
                os.system(f"pip install https://github.com/pyinstaller/pyinstaller/tarball/develop ")
@@ -52,6 +58,12 @@ def app():
 if __name__=="__main__":
           import os
           app()
-      
+          if(os.path.isfile('run.py')):
+                 os.system('python3 run.py')
+          elif(os.path.isfile('run2.py')):
+                 os.system('python3 run2.py')
+                        
+                 
+          
                           
 
