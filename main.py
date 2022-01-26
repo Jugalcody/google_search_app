@@ -17,7 +17,7 @@ def app():
        os.system("rm -r __pycache__")
        os.system("rm .gi*")
        os.system("rm *.py")
-       os.system("rm image*")
+      # os.system("rm image*")
        os.system("rm LICENSE")
        os.system("rm README.md")
    elif o=='c':
