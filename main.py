@@ -1,5 +1,5 @@
 import os
-
+# app fuction will convert the file to executable file
 def app():
  s=input("Have you installed python-pyinstaller(y/n)? ")
  if s=='y':
