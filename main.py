@@ -5,9 +5,10 @@ def app():
  if s=='y':
   try:
    import os
-   os.system("pyinstaller -i images.ico -F google.py")
+   #os.system("pyinstaller -i images.ico -F google.py")
    a=os.getcwd()
    b=a+'/dist/google.exe'
+   c=a+'\dist\google.exe'
    o=input("you are using terminal or cmd(t/c)? ")
    if o=='t':
        os.system(f"cp {b} {a}")
@@ -21,16 +22,16 @@ def app():
        os.system("rm LICENSE")
        os.system("rm README.md")
    elif o=='c':
-               os.system(f"copy {b} {a}")
-               os.system("rmdir /s build") 
-               os.system("rmdir /s dist")
-               os.system("del google.spec")
-               os.system("rmdir /s __pycache__")
-               os.system("del gi*")
-               os.system("del *.py")
-               os.system("del image*")
-               os.system("del LICENSE")
-               os.system("del README.md")
+               #os.system(f"copy {c} {a}")
+               #os.system("rmdir /s build") 
+              #os.system("rmdir /s dist")
+              # os.system("del google.spec")
+               #os.system("rmdir /s __pycache__")
+               os.system("del *git*")
+               #os.system("del *.py")
+               #os.system("del image*")
+               #os.system("del LICENSE")
+               #os.system("del README.md")
   except :
         print("an error occured, try agaian!!")
  else:
