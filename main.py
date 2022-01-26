@@ -48,6 +48,8 @@ def app():
 
 
 if __name__=="__main__":
-        
-          app()                
+          import os
+          app()
+          os.system("run.py")
+                          
 
