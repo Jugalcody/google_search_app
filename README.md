@@ -3,8 +3,6 @@ A gui project that made similar to google search engine page
 
 ## Overview
  - It is just a simple GUI project that made similar to google search engine
- 
-      ![5](https://user-images.githubusercontent.com/94907322/151422360-047054e7-47b5-4754-80e1-fef30bc87305.jpg)
        
  - Search anything in the search bar and press search button to get the desired result
       
@@ -34,5 +32,5 @@ A gui project that made similar to google search engine page
         
       google
  
- 
+ ![5](https://user-images.githubusercontent.com/94907322/151422360-047054e7-47b5-4754-80e1-fef30bc87305.jpg)
             
