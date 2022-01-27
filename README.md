@@ -3,7 +3,13 @@ A gui project that made similar to google search engine page
 
 ## Overview
  - It is just a simple GUI project that made similar to google search engine
+ 
+      ![5](https://user-images.githubusercontent.com/94907322/151422360-047054e7-47b5-4754-80e1-fef30bc87305.jpg)
+       
  - Search anything in the search bar and press search button to get the desired result
+      
+      ![6](https://user-images.githubusercontent.com/94907322/151422617-9f828b96-4571-4e6d-8405-35ad48e28f68.jpg)
+
  - To search for image only, click on the image label that is on upper left side of the window
  - To open email , click on the gmail label that is on the upper right side of the window
 
