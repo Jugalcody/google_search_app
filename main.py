@@ -1,7 +1,7 @@
 import os
 # app fuction will convert the file to executable file
 def app():
- s=input("Have you installed python-pyinstaller(y/n)? ")
+ s=input("have you installed python-pyinstaller(y/n)? ")
  if s=='y':
    try:
      import os
@@ -33,9 +33,12 @@ def app():
        os.system("sudo cp run.py /bin")
    elif o=='c':
                os.system(f"copy {c} {a}")
-               os.system("rmdir /s build") 
+               print("Enter y ----\n")
+               os.system("rmdir /s build")
+               print("Enter y ----\n")
                os.system("rmdir /s dist")
                os.system("del google.spec")
+               print("Enter y ----\n")
                os.system("rmdir /s __pycache__")
                os.system("del *git*")
                os.system("del main.py")
@@ -61,7 +64,7 @@ if __name__=="__main__":
           if(os.path.isfile('run.py')):
                  os.system('python3 run.py')
           elif(os.path.isfile('run2.py')):
-                 os.system('python3 run2.py')
+                 os.system('python run2.py')
                         
                  
           
