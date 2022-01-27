@@ -7,29 +7,30 @@ class Google:  #Google class will create a google search engine
            self.root.title("Google")
            self.root.resizable(False,False)
            self.root.geometry('1199x600+70+70')
-           l=tk.Label(self.root,text="ALL")
+           l=tk.Label(self.root,text="ALL",cursor="hand2")
            l.place(relx=0.01,rely=0.01)
 
-           m=tk.Label(self.root,text="IMAGES")
+           m=tk.Label(self.root,text="IMAGES",cursor="hand2")
            m.place(relx=0.055,rely=0.01)
            
-           email=tk.Label(self.root,text="GMAIL")
+           email=tk.Label(self.root,text="GMAIL",cursor="hand2")
            email.place(relx=0.92,rely=0.01)
 
-           g=tk.Label(self.root,text="GOOGLE",font=("Helvatical Bold",38))
+           g=tk.Label(self.root,text="GOOGLE",font=("Helvatical bold",38))
            g.place(relx=0.4,rely=0.3)
            t=tk.Entry(self.root)
            t.place(relx=0.325,rely=0.45,width=400,height=42)
            
            
            def search():
-                  s=t.get()
+               s=t.get()
+               if(s!=''):
                   if(re.fullmatch(r'www.+\b[A-Za-z0-9_-]+.[A-Z|a-z]\b',s)):
                                    wb.open(s)
                   else:                 
                                    wb.open('https://www.google.com/search?q='+s+'&oq=github&aqs=chrome..69i57j46i199i433i465i512j0i433i512j69i59j0i512j69i60l3.4076j0j7&sourceid=chrome&ie=UTF-8')
 
-           b=tk.Button(self.root,text="search",command=search,width=9,height=1)
+           b=tk.Button(self.root,text="search",command=search,cursor="hand2",width=9,height=1)
            b.place(relx=0.45,rely=0.56)
            
            l.bind("<Button>",lambda e: wb.open("https://www.google.com"))
