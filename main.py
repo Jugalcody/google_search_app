@@ -29,6 +29,11 @@ def app():
        os.system("rm run2.py")
        os.system("chmod +x google")
        os.system("chmod +x run.py")
+       f=open(".zshrc","a+")
+       v=os.getcwd()
+       f.write(f"export PATH=$PATH:{v}")
+       os.system("source ~/.zshrc")
+       f.close()
        os.system("sudo cp google /bin")
        os.system("sudo cp run.py /bin")
    elif o=='c':
@@ -53,11 +58,7 @@ def app():
                os.system(f"pip install https://github.com/pyinstaller/pyinstaller/tarball/develop ")
                app()
                         
-                                        
-                                
-                                
-
-
+                                     
 if __name__=="__main__":
           import os
           app()
