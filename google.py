@@ -6,21 +6,20 @@ class Google:  #Google class will create a google search engine
            self.root=tk.Tk()
            self.root.title("Google")
            self.root.resizable(False,False)
-           self.root.geometry('600x400+350+160')
+           self.root.geometry('1199x600+70+70')
            l=tk.Label(self.root,text="ALL")
            l.place(relx=0.01,rely=0.01)
 
            m=tk.Label(self.root,text="IMAGES")
-           m.place(relx=0.09,rely=0.01)
+           m.place(relx=0.055,rely=0.01)
            
            email=tk.Label(self.root,text="GMAIL")
-           email.place(relx=0.87,rely=0.01)
+           email.place(relx=0.92,rely=0.01)
 
-           g=tk.Label(self.root,text="GOOGLE",font=("Helvatical Bold",30))
-           g.place(relx=0.34,rely=0.3)
-
+           g=tk.Label(self.root,text="GOOGLE",font=("Helvatical Bold",38))
+           g.place(relx=0.4,rely=0.3)
            t=tk.Entry(self.root)
-           t.place(relx=0.24,rely=0.5,width=300,height=35)
+           t.place(relx=0.32,rely=0.45,width=400,height=42)
            
            
            def search():
@@ -30,8 +29,8 @@ class Google:  #Google class will create a google search engine
                   else:                 
                                    wb.open('https://www.google.com/search?q='+s+'&oq=github&aqs=chrome..69i57j46i199i433i465i512j0i433i512j69i59j0i512j69i60l3.4076j0j7&sourceid=chrome&ie=UTF-8')
 
-           b=tk.Button(self.root,text="search",command=search)
-           b.place(relx=0.42,rely=0.64)
+           b=tk.Button(self.root,text="search",command=search,width=9,height=1)
+           b.place(relx=0.45,rely=0.56)
            
            l.bind("<Button>",lambda e: wb.open("https://www.google.com"))
            
