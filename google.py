@@ -19,7 +19,7 @@ class Google:  #Google class will create a google search engine
            g=tk.Label(self.root,text="GOOGLE",font=("Helvatical Bold",38))
            g.place(relx=0.4,rely=0.3)
            t=tk.Entry(self.root)
-           t.place(relx=0.32,rely=0.45,width=400,height=42)
+           t.place(relx=0.325,rely=0.45,width=400,height=42)
            
            
            def search():
