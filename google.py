@@ -18,7 +18,7 @@ class Google:  #Google class will create a google search engine
 
            g=tk.Label(self.root,text="GOOGLE",font=("Helvatical bold",38))
            g.place(relx=0.4,rely=0.3)
-           t=tk.Entry(self.root)
+           t=tk.Entry(self.root,font=("Default",14))
            t.place(relx=0.325,rely=0.45,width=400,height=42)
            
            
