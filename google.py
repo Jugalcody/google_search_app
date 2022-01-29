@@ -25,7 +25,7 @@ class Google:  #Google class will create a google search engine
            def search():
                s=t.get()
                if(s!=''):
-                  if(re.fullmatch(r'www.+\b[A-Za-z0-9_-]+.[A-Z|a-z]\b',s)):
+                  if(re.match(r'[a-z://a-z.]+\b[A-Za-z0-9_-]+.[A-Z|a-z]\b',s)):
                                    wb.open(s)
                   else:                 
                                    wb.open('https://www.google.com/search?q='+s+'&oq=github&aqs=chrome..69i57j46i199i433i465i512j0i433i512j69i59j0i512j69i60l3.4076j0j7&sourceid=chrome&ie=UTF-8')
